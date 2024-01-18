@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    background-image: url('/assets/UN_General_Assembly_hall.jpg');
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(30,30,30,.55), #1E1E1E);
+    z-index: 100;
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding-block: 4rem;
+}
+
+.logo{
+    img{
+        height: 15vh;
+    }
+    margin-bottom: 2rem;
+}
+
+h1{
+    // font-size: 3.5rem;
+    font-size: clamp(2.25rem, 5vw, 6rem);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+h3{
+    margin: 0;
+    color: #F8C017;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.text{
+    h1{
+        text-transform: uppercase;
+        // font-size: 10rem;
+        font-size: clamp(7rem, 10vw, 14rem);
+        -webkit-text-stroke: 2px white;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+    opacity: .15;
+    margin-top: 5rem; 
+    display: flex;
+    justify-content: center;
+}
